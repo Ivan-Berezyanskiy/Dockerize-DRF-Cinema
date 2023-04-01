@@ -12,7 +12,9 @@ cd Dockerize-DRF-Cinema
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-create .env file(You can see how create .env file in .env.sample) 
+```
+Create .env file(You can see how create .env file in .env.sample) 
+```
 python manage.py migrate
 python manage.py runserver
 ```
