@@ -32,5 +32,5 @@ class ManageUserView(generics.RetrieveUpdateAPIView):
         return super().put(request, *args, **kwargs)
 
     def patch(self, request, *args, **kwargs):
-        """ There you can зartial_update user """
+        """ There you can partial_update user """
         return super().patch(request, *args, **kwargs)
