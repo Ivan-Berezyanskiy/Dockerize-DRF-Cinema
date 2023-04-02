@@ -11,7 +11,7 @@ class CreateUserView(generics.CreateAPIView):
     serializer_class = UserSerializer
 
     def post(self, request, *args, **kwargs):
-        """ There you can create user """
+        """There you can create user"""
         return super().post(request, *args, **kwargs)
 
 
@@ -24,13 +24,13 @@ class ManageUserView(generics.RetrieveUpdateAPIView):
         return self.request.user
 
     def get(self, request, *args, **kwargs):
-        """ There you can get user """
+        """There you can get user"""
         return super().get(request, *args, **kwargs)
 
     def put(self, request, *args, **kwargs):
-        """ There you can update user """
+        """There you can update user"""
         return super().put(request, *args, **kwargs)
 
     def patch(self, request, *args, **kwargs):
-        """ There you can partial_update user """
+        """There you can partial_update user"""
         return super().patch(request, *args, **kwargs)
